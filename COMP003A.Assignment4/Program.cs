@@ -11,7 +11,7 @@ namespace COMP003A.Assignment4
     {
         static void Main(string[] args)
         {
-            /*
+         
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("for-loop Section");
             Console.WriteLine("Output a Right Triangle Based On User Input.");
@@ -45,7 +45,7 @@ namespace COMP003A.Assignment4
             };
             foreach (var Friend in simpleArray)
             {
-                Console.WriteLine($"\tFriends Name: {Friend}");
+                Console.WriteLine($"Friends Name: {Friend}");
             }
 
             Console.WriteLine("\n");
@@ -58,11 +58,11 @@ namespace COMP003A.Assignment4
 
             do
             {
-                Console.WriteLine($"\tCounter: {counter}");
+                Console.WriteLine($"Counter: {counter}");
                 counter +=5; 
             }
             while (counter < 50);
-            */
+            
             Console.WriteLine("\n"); 
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("while Section");
@@ -76,29 +76,31 @@ namespace COMP003A.Assignment4
 
             for (int counter2 = 1; counter2 <= 20; counter2++)
             {
-                if (counter2 % 2 == 0)
+                if ((counter2 % 5 == 0) && (counter2 % 2 == 0))
                 {
-
-                    Console.WriteLine($"\t{counter2}:Foo");
-
-                    if (counter2 % 5 == 0)
-                    {
-
-                        Console.WriteLine($"\t: Bar");
-                    }
-                    if ((counter2 % 2==0)&&(counter2 % 5==0))
-                    {
-
-                        Console.WriteLine($"\t{counter2}: FooBar");
-                    }
+                    
+                    Console.WriteLine($"FooBar");
+                }
+                else if (counter2 % 5 == 0)
+                {
+                   
+                    Console.WriteLine($"Bar");
+                }
+                else if (counter2 % 2 == 0)
+                {
+                    
+                    Console.WriteLine($"Foo");
                 }
                 else
                 {
                     
-                    Console.WriteLine($"\t{counter2}");
+                    Console.WriteLine($"{counter2}");
                 }
+
+                
             }
          
         }
+        
     }
 }
