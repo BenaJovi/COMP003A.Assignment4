@@ -47,7 +47,7 @@ namespace COMP003A.Assignment4
             {
                 Console.WriteLine($"Friends Name: {Friend}");
             }
-
+             
             Console.WriteLine("\n");
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("do-while Section");
