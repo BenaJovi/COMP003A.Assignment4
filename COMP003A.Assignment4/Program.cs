@@ -54,7 +54,7 @@ namespace COMP003A.Assignment4
             Console.WriteLine("Output 0-50 by 5's");
             Console.WriteLine("".PadRight(50, '*'));
 
-            int counter = 0;                                           // lines 57-64 
+            int counter = 0;                                           // lines 57-64   
                                                                        // includes a do-while loop that will count by 5's up to 50 and out put the values. 
             do      
             {
